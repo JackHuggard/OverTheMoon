@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+		body, html {
+  			height: 100%;
+ 			color: #28282B;
+  			line-height: 1.8;
+		}
+			/* Background Images*/
+		.backGroundImage-1, .backGroundImage-2, .backGroundImage-3 {
+  			background-attachment: fixed;
+  			background-position: 90% 10%;
+  			background-repeat: no-repeat;
+  			background-size: cover;
+		}
+		
+		.backGroundImage-1 {
+			background-image: url('Lady.jpg');
+  			min-height: 100%;
+		}
+		.backGroundImage-2 {
+  			background-image: url("Haircut2.jpg");
+  			min-height: 400px;
+		}
+		.backGroundImage-3 {
+			background-image: url("/w3images/parallax2.jpg");
+  			min-height: 400px;
+		}
+		
+		.wide {letter-spacing: 10px;}
+		.hover-opacity {cursor: pointer;}
+		
+		@media only screen and (max-device-width: 1600px) {
+  			.backGroundImage-1, .backGroundImage-2, .backGroundImage-3 {
+    			background-attachment: scroll;
+    			min-height: 400px;
+  			}
+		}
+		/* Colors Blue R-17 G-31 B-16 Red R-151 G-61 B-70*/
+	</style>
+</head>
+<body>
+	<!-- Nav Bar -->
+<div class="w3-top">
+  <div class="w3-bar" id="navbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
+	<a href="https://online-booking.salonbiz.com/olb/web_booking.home?wbid=c950t201309061613pC4k5R2A83wvi76774Kew&theme=535" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-calendar"></i> Book</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contact</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+<div id="navBarSmall" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+	  <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
+  </div>
+</div>
+	<!-- First Parallax Image with Logo Text -->
+<div class="backGroundImage-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Over The Moon</span>
+  </div>
+</div>	
+	<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">Hours and Location</h3>
+	<div class="w3-col m6">
+  <p class="w3-center"><em>Monday: 9:00 - 5:00</em></p>
+	<p class="w3-center"><em>Tuesday: 9:00 - 5:00</em></p>
+	<p class="w3-center"><em>Wednesday: 9:00 - 5:00</em></p>
+	<p class="w3-center"><em>Thursday: 9:00 - 5:00</em></p>
+	<p class="w3-center"><em>Friday: 9:00 - 5:00</em></p>
+	<p class="w3-center"><em>Saturday: 9:00 - 5:00</em></p>
+	<p class="w3-center"><em>Sunday: 9:00 - 5:00</em></p>
+  </div>
+	<div class="w3-margin-left">
+		<p id = "location">1100 Spruce St, Boulder, Colorado 80302</p>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.5477884608727!2d-105.28364974859866!3d40.01854757931235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bec2703afa1e7%3A0xc5811be28c3c6b94!2s1100%20Spruce%20St%2C%20Boulder%2C%20CO%2080302!5e0!3m2!1sen!2sus!4v1653997661028!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+	<div>
+	</div>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right">
+	  </i>Ramon Schicchi</b></p><br>	<img src="staff-ramon.jpg" class="w3-round w3-image " alt="Photo of Me" width="500" height="333">
+</div>
+
+    <!-- Hide this text on small devices -->
+<div class="w3-col m6 w3-hide-small w3-padding-large">
+	<div class="w3-padding-64">
+		<p>Ramon was born into a family of hair stylists in Florence, Italy. Since he was little, he grew up in the world of fashion. In 1995, he began to work officially in the salon and took over management in 2013 until he moved to the United States.
+		</p>
+		<p>
+		His area of expertise is creating a personalized style for each individual. He is passionate about sculpting hair to create a harmonious look and likes using color to accentuate and bring out each person’s unique look.
+		</p>
+		<p>Ramon does his work with passion, and prides himself on allowing his client’s time in his chair to be renewing, relaxing and rejuvenating.</p>
+	</div>
+</div>
+</div>
+	<div class="w3-hide-large w3-padding-large">
+		<p>Ramon was born into a family of hair stylists in Florence, Italy. Since he was little, he grew up in the world of fashion. In 1995, he began to work officially in the salon and took over management in 2013 until he moved to the United States.
+		</p>
+		<p>
+		His area of expertise is creating a personalized style for each individual. He is passionate about sculpting hair to create a harmonious look and likes using color to accentuate and bring out each person’s unique look.
+		</p>
+		<p>Ramon does his work with passion, and prides himself on allowing his client’s time in his chair to be renewing, relaxing and rejuvenating.</p>
+	</div>
+</div>
+	<!-- Container (Product Section) Image -->
+<div class="backGroundImage-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Hair Care Services</span>
+  </div>
+</div>
+	<!-- Container (Product Section) -->
+<div>
+	  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large w3-hide-small">
+      <img src="Haircut.jpg" class="w3-round w3-image "  width="500" height="333">
+	</div>
+
+    <!-- Hide this text on small devices -->
+<div class="w3-col m6 w3-padding-large">
+	<div class="w3-padding-64">
+		<p>
+		Hair Cuts: We specialize in modern haircuts for men and women. Looking for the perfect cut for your special occasion? Pixie cuts, routine trims, face framing cuts – You choose your look, and we perfect it. Our master Boulder hair stylists are ready to give you the special attention you deserve.
+		</p>
+		<p>
+		Hair Color: Looking for something a little different? Hoping to add some streaks or try a new color? We are ready to give you the color you’ve always dreamed of. From full to partial highlights, balayage, full color or root touch ups, there is nothing we can’t do.
+		</p>
+		<p>
+		Hair Styling: Happy with your cut and color and just looking for a new look? Headed out for an electric night on the town and want a hairstyle to match? We can take care of you! Our expert Boulder hair stylists excel in providing modern, sleek styles for any occasion. Check out our Hair Styling page for more info!
+		</p>
+		<p>
+		Texture & Straightening: Straight or curly. Brazilian Blowouts or a partial perm. We provide consultations to discuss what you are looking for, and then give you the best texture or straightening available from professional Boulder hair stylists.
+		</p>
+		<p>
+		Conditioning Treatments: Botanical therapy hair and scalp treatments, and botanical therapy treatments for thinning hair. These specialty treatments enrich your roots and help your hair shine the way it’s meant to!
+		</p>
+		<p>
+		Weddings: Trust On Broadway Salon & Spa with your Boulder wedding haircut and style. We custom tailor your Bridal hair to order, and can cater to your entire wedding party with our Bridal Party Up-Dos, cuts and color. We also do styles & blow outs, bridal makeup, bridal trial makeup, and bridal party makeup. The consultation is always free, and our stylists are on hand to serve your every need.
+		</p>
+	</div>
+</div>
+</div>
+</div>
+	<!-- Container (Location Section) -->
+<div class="w3-content w3-container w3-padding-64">
+	<p style="text-align:center"><i>Privacy Policy</i></p>
+	<p style="text-align:center"><i>Copyright&nbsp;© 2021 Over The Moon Salon</i></p>
+	<div class="w3-padding-24">
+		<p style="text-align: center"><i>Over The Moon Salon</i></p>
+		<p style="text-align: center"><i>1100 Spruce St, Boulder, Colorado 80302</i></p>
+		<p style="text-align: center"><i>(303) 444-0330</i></p>
+	</div>
+</div>
+	
+</body>
+<script>
+	window.onscroll = function() {myFunction()};
+	function myFunction() {
+    	var navbar = document.getElementById("myNavbar");
+    	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        	navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    	} else {
+        	navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    	}
+	}
+	
+	function toggleFunction() {
+    	var x = document.getElementById("navDemo");
+    	if (x.className.indexOf("w3-show") == -1) {
+        	x.className += " w3-show";
+    	} else {
+        	x.className = x.className.replace(" w3-show", "");
+    	}
+	}
+</script>
+</html>
